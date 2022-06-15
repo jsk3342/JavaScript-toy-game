@@ -15,20 +15,70 @@
   <main class="main">
     <h2 class="main-title"><span id="order">1</span> 번째 참가자</h2>
     <p class="main-sub">제시어: <span id="word">미정</span></p>
-    <input type="text">
+    <input placeholder="입력해 주세요" type="text">
     <div class="control-btn">
-      <button type="button">
-        <img src="./src/start-disabled.png" alt="start">
+      <button type="button" class="start-btn">
+        <img src="./src/start-disabled.png" alt="start" />
       </button>
-      <button type="button">
-        <img src="./src/reset-disabled.png" alt="reset">
+      <button type="button" class="clear-btn">
+        <img src="./src/reset-disabled.png" alt="reset" />
       </button>
     </div>
   </main>
 
-
   <script>
-    //코드 구현 부분
+    //코드 구현 부분    
+    const num = Number(prompt('몇명?'));
+    const $order = document.querySelector('#order');
+    const $input = document.querySelector('input');
+    const $start = document.querySelector('.start-btn')
+    const $word = document.querySelector('#word')
+
+    let word;
+    let newWord;
+
+    const onClickButton = () => {
+      (!word || word[word.length - 1] === newWord[0])? changeText() : alert('오류야!')
+    }
+    
+    const changeText = () => {
+      word = newWord;
+      $word.textContent = newWord;
+      $input.value = '';
+      $input.focus();const count = parseInt($order.textContent);
+      if (count + 1 > num) {
+        $order.textContent = 1;
+      } else {
+        $order.textContent = count + 1;
+      } 
+    }
+
+
+    const onInput = (event) => {
+      console.log(event.target.value) // event는 이벤트가 발생한 대상(요소)를 얻는다.
+      newWord = event.target.value;
+    }
+
+    $start.addEventListener('click', onClickButton);
+    $input.addEventListener('input', onInput);
+
+
+    // 막막할 때 Tip
+
+    // 돔 컨트롤 변수를 만든다
+    // 클릭과 인풋 입력 함수 두 가지를 만든다. 
+    // (처음엔 함수 선언 문법에 맞춰 작성하기도 쉽지 않습니다.)
+    
+    // 인풋창에 입력이 들어오는 이벤트리스너 장착 (콜백 함수로 onInput 함수 받기)
+    // 버튼에 클릭을 체크하는 이벤트리스너 장착 (콜백 함수로 onClickButton 함수 받기)
+
+    // console.log를 활용하여 값이 잘 들어오고 있는지 확인하기
+
+    // 몇 명 참가?
+    // 변수에 담아서
+    // 제시어를 받아야
+    // 받은 제시어 미정이라는 공간에
+    // 버튼 눌렀을 때 미정에 뜨도록
   </script>
 </body>
 
