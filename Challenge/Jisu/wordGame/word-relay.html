@@ -81,6 +81,40 @@
 
       $start.addEventListener("click", onClickButton);
       $input.addEventListener("input", onInput);
+
+      /* const num = Number(prompt('몇명?'));
+      const $order = document.querySelector('#order');
+      const $input = document.querySelector('input');
+      const $start = document.querySelector('.start-btn')
+      const $word = document.querySelector('#word')
+  
+      let word;
+      let newWord;
+  
+      const onClickButton = () => {
+        (!word || word[word.length - 1] === newWord[0])? changeText() : alert('오류야!')
+      }
+      
+      const changeText = () => {
+        word = newWord;
+        $word.textContent = newWord;
+        $input.value = '';
+        $input.focus();const count = parseInt($order.textContent);
+        if (count + 1 > num) {
+          $order.textContent = 1;
+        } else {
+          $order.textContent = count + 1;
+        } 
+      }
+  
+  
+      const onInput = (event) => {
+        console.log(event.target.value) // event는 이벤트가 발생한 대상(요소)를 얻는다.
+        newWord = event.target.value;
+      }
+  
+      $start.addEventListener('click', onClickButton);
+      $input.addEventListener('input', onInput); */
     </script>
   </body>
 </html>
