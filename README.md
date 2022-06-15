@@ -1,6 +1,8 @@
 # JavaScript-toy-game
 
 ![자바스크립트기능구현-001](https://user-images.githubusercontent.com/85912592/173371781-46e653aa-1aa7-46cc-80c2-23a7a12fa395.png)
+## 구현
+![구현영상](https://user-images.githubusercontent.com/85912592/173733117-93bcadfc-21c5-4c64-862c-4269f7cd2935.gif)
 
 
 ## 주제
