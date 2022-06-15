@@ -20,16 +20,6 @@ button {
   cursor: pointer;
 }
 
-.ir {
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  border: 0;
-  clip: rect(1px, 1px, 1px, 1px);
-  clip-path: inset(50%);
-}
-
 /* design */
 body {
   background: radial-gradient(96.74% 276.79% at 3.59% 5.28%, #F0F4FF 0%, #A5B6EE 100%);
