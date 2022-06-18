@@ -47,7 +47,7 @@
           word = newWord; //데이터를 바꾸고 화면을 구현해줘야 한다.
           $word.innerText = word; //미정값을 입력어로 변경하여 출력
           $input.value = ""; //값을 넘기고 인풋창 초기화
-          $input.focus()
+          $input.focus();
           const order = parseInt($order.textContent); //다음사람에게 순서를 넘기기 위해 저장
           if (order + 1 > num) {
             $order.textContent = 1;
@@ -61,7 +61,7 @@
             word = newWord; //데이터를 바꾸고 화면을 구현해줘야 한다.
             $word.innerText = word; //미정값을 입력어로 변경하여 출력
             $input.value = ""; //값을 넘기고 인풋창 초기화
-            $input.focus()
+            $input.focus();
             const order = parseInt($order.textContent); //다음사람에게 순서를 넘기기 위해 저장
             if (order + 1 > num) {
               $order.textContent = 1;
@@ -69,7 +69,7 @@
               $order.textContent = order + 1;
             }
           } else {
-            console.log('오류')
+            console.log("오류");
           }
         }
       };
@@ -115,6 +115,7 @@
   
       $start.addEventListener('click', onClickButton);
       $input.addEventListener('input', onInput); */
+
     </script>
   </body>
 </html>
