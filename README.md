@@ -4,10 +4,14 @@
 ## 구현
 ![구현영상](https://user-images.githubusercontent.com/85912592/173733117-93bcadfc-21c5-4c64-862c-4269f7cd2935.gif)
 
+<img width="369" alt="image" src="https://user-images.githubusercontent.com/85912592/174470576-d9fe6b1a-4854-47c8-b18b-fd0f93534da7.png">
+
+
 
 ## 주제
-
-끝말잇기 게임 만들기
+자바 스크립트 구현
+1. 끝말 잇기 게임
+2. 계산기 
 
 ## 목표
 
