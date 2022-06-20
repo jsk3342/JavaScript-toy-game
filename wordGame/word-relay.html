@@ -48,6 +48,7 @@
 		const setWord = () => {
 			word = newWord;
 			$word.textContent = newWord
+			countNum();
 		}
 
 		const err = () => {
@@ -57,15 +58,15 @@
 		const countNum = () => {
 			let count = parseInt($order.textContent)
 			if (count + 1 > num) {
-				$order.textContent = 1
+				count = 1
 			} else {
-				$order.textContent = count + 1
-			}
+				count += 1
+			} 
+			$order.textContent = count
 		}
 
 		const startBtn = () => {
 			(!word || word[word.length-1] === newWord[0])?setWord():err();
-			countNum();
 			initInputValue();
 		}
 
